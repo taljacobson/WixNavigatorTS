@@ -8,6 +8,8 @@ Minimal template of a [React Native](https://facebook.github.io/react-native/) p
 
 > Recommended usage with [VSCode](https://code.visualstudio.com/)
 
+Wix/react-native-nagivation with typescript. 
+
 ## Getting Started
 
 * Requirements: [Node.js](https://nodejs.org) and [Yarn](https://yarnpkg.com/)
