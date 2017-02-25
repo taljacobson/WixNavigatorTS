@@ -1,10 +1,8 @@
-# ReactNativeTS
+# WixNavigatorTS
 
-[![Build Status][ci-image]][ci-url] [![dependencies][dependencies-image]][dependencies-url] [![dev-dependencies][dev-dependencies-image]][dev-dependencies-url]
+[React Native](https://facebook.github.io/react-native/) project with [Typescript](https://www.typescriptlang.org/) using [Wix React-native-navigation](https://github.com/wix/react-native-navigation)
 
-Minimal template of a [React Native](https://facebook.github.io/react-native/) project with [Typescript](https://www.typescriptlang.org/).
 
-![preview](https://github.com/mrpatiwi/ReactNativeTS/raw/images/preview.png)
 
 > Recommended usage with [VSCode](https://code.visualstudio.com/)
 
