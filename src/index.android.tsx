@@ -1,57 +1,23 @@
-import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { Navigation } from 'react-native-navigation';
 
-import HelloWorld from "./components/HelloWorld/index";
+import { registerScreens } from './screens';
 
-interface Props {
+registerScreens(); // this is where you register all of your app's screens
 
-}
-
-interface State {
-
-}
-
-export default class App extends Component<Props, State> {
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    Welcome to React Native!
-                </Text>
-                <Text style={styles.instructions}>
-                    To get started, edit index.android.js
-                </Text>
-                <Text style={styles.instructions}>
-                    Shake or press menu button for dev menu
-                </Text>
-
-                <HelloWorld style={styles.helloworld} max={10} />
-            </View>
-        );
+// start the app
+Navigation.startTabBasedApp({
+  tabs: [
+    {
+      label: 'One',
+      screen: 'example.FirstTabScreen', // this is a registered name for a screen
+      icon: require('../img/one.png'),
+      title: 'Screen One'
+    },
+    {
+      label: 'Two',
+      screen: 'example.SecondTabScreen',
+      icon: require('../img/two.png'),
+      title: 'Screen Two'
     }
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#F5FCFF",
-    } as React.ViewStyle,
-
-    welcome: {
-        fontSize: 20,
-        textAlign: "center",
-        margin: 10,
-    } as React.TextStyle,
-
-    instructions: {
-        textAlign: "center",
-        color: "#333333",
-        marginBottom: 5,
-    } as React.TextStyle,
-
-    helloworld: {
-        marginVertical: 15,
-    } as React.ViewStyle,
+  ]
 });
